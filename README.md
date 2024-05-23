@@ -1,6 +1,6 @@
 # TodoList avec NestJS 😊
 
-Participant à ce projet : Hakim Choura, Sashtiga
+Participant à ce projet : Hakim CHOURA, Sashtiga SASIRAJAH
 
 ## Etapes du projet :
 
