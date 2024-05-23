@@ -2,6 +2,23 @@
 
 Participant à ce projet : Hakim Choura, Sashtiga
 
+## Etapes du projet :
+
+Premièrement, comme demandé nous avons fait un fork de votre projet :
+
+![fork](https://github.com/Hakimisme/nestjs-final-test/assets/71923414/f19ac7dc-a7d7-49e9-9407-18441312a5cc)
+
+
+Par la suite nous nous sommes rendu sur VS CODE et avons fait un git clone de notre repository
+![gitclone](https://github.com/Hakimisme/nestjs-final-test/assets/71923414/05b85866-f1ff-4f55-887d-a49f3e34a8e5)
+
+On a par la suite installer toutes les dépendances :
+![dependance](https://github.com/Hakimisme/nestjs-final-test/assets/71923414/7ceeb34d-bdf0-42a4-a885-1889e6f35134)
+
+On a lancer la commande suivante dans le terminal : 
+
+
+
 ## Objectif 🎯
 Le but de ce projet est de démontrer la maîtrise du framework NestJS en implémentant les fonctionnalités nécessaires pour passer tous les tests automatisés inclus.
 
