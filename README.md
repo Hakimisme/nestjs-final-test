@@ -72,13 +72,32 @@ Deux SGBD sont contenairisés via Docker :
 
 Pour utiliser ces bases de données :
 1. Lancez Docker Desktop.
-2. Utilisez les scripts npm pour démarrer le serveur avec la base de données de votre choix :
+2. Utilisez les scripts npm pour démarrer le serveur avec la base de données de votre choix (attention en fonction de votre système les commandes peuvent variées, par défaut on a Windows) :
+    A. Windows
+    et MongonDB :
+        ```bash
+        npm run start:mongodb
+        ```
+        ou
+        ```bash
+        npm run start:mongodb:windows
+        ```
+    ou Postgres :
+        ```bash
+        npm run start:postgres
+        ```
+        ou
+        ```bash
+        npm run start:postgres:windows
+        ```
+    B. Linux 
+    et MongoDB :
     ```bash
-    npm run start:mongodb
+    npm run start:mongodb:linux
     ```
-    ou
+    ou Postgres :
     ```bash
-    npm run start:postgres
+    npm run start:postgres:linux
     ```
 
 ### Configuration de l'ORM ⚙️
