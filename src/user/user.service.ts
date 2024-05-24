@@ -21,11 +21,10 @@ export class UserService {
 
     async getUser(email: string): Promise<User> {
         if(!email)
-            throw new HttpException('email est null', HttpStatus.BAD_REQUEST);
+            throw new HttpException('email is null', HttpStatus.BAD_REQUEST);
         const user = this.prismaService.user.findFirst({where: {email}});
         if(!user)
-            throw new HttpException('par d\'user trouvé', HttpStatus.BAD_REQUEST);
-        console.log('User find !')
+            throw new HttpException('user not found', HttpStatus.BAD_REQUEST);
         return user;
 
     }
