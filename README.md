@@ -72,36 +72,20 @@ Deux SGBD sont contenairisés via Docker :
 
 Pour utiliser ces bases de données :
 1. Lancez Docker Desktop.
-2. Utilisez les scripts npm pour démarrer le serveur avec la base de données de votre choix (attention en fonction de votre système les commandes peuvent variées, par défaut on a Windows) :
-    A. Windows
-    et MongonDB :
-        ```bash
-        npm run start:mongodb
-        ```
-        ou
-        ```bash
-        npm run start:mongodb:windows
-        ```
-    ou Postgres :
-        ```bash
-        npm run start:postgres
-        ```
-        ou
-        ```bash
-        npm run start:postgres:windows
-        ```
-    B. Linux 
-    et MongoDB :
+2. Utilisez les scripts npm pour démarrer le serveur avec la base de données de votre choix :
     ```bash
-    npm run start:mongodb:linux
+    npm run start:mongodb
     ```
-    ou Postgres :
+    ou
     ```bash
-    npm run start:postgres:linux
+    npm run start:postgres
     ```
+
+Attention : en fonction de votre système les scripts peuvent variées. merci de rajouter ```bash :votre_systeme ``` à la fin des scripts précédentes. (ex : si vous utilisez Windows -> ```bash npm run start:mongodb:windows```) Par défaut, les scripts précédentes fonctionnent pour Windows.
 
 ### Configuration de l'ORM ⚙️
 L'ORM choisi pour ce projet est [TypeORM/Mongoose/Sequelize/MikroORM/Prisma]. (Choisissez celui que vous avez utilisé)
+Nous avons utilisé Prisma.
 
 ## Lancement des Tests 🧪
 Pour lancer les tests end-to-end (e2e) :
@@ -113,12 +97,14 @@ ou
 npm run test:e2e:postgres
 ```
 
+Attention : en fonction de votre système les scripts peuvent variées. merci de rajouter ```bash :votre_systeme ``` à la fin des scripts précédentes. (ex : si vous utilisez Windows -> ```bash npm run test:e2e:mongodb:windows```) Par défaut, les scripts précédentes fonctionnent pour Windows.
+
 ## Commandes Utiles 🚀
 - **Installer les dépendances :** `npm ci`
-- **Lancer le serveur avec MongoDB :** `npm run start:mongodb`
-- **Lancer le serveur avec PostgreSQL :** `npm run start:postgres`
-- **Lancer les tests e2e avec MongoDB :** `npm run test:e2e:mongodb`
-- **Lancer les tests e2e avec PostgreSQL :** `npm run test:e2e:postgres`
+- **Lancer le serveur avec MongoDB sur Windows :** `npm run start:mongodb`
+- **Lancer le serveur avec PostgreSQL sur Windows :** `npm run start:postgres`
+- **Lancer les tests e2e avec MongoDB sur Windows:** `npm run test:e2e:mongodb`
+- **Lancer les tests e2e avec PostgreSQL sur Windows :** `npm run test:e2e:postgres`
 
 ---
 
