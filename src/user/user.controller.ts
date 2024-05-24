@@ -8,15 +8,12 @@ export class UserController {
 
     @Post()
     async createUser(@Body() payload: { email: string }): Promise<{status: number; user: User}>{
-        console.log('[userController]');
-        if((payload === undefined || payload === null) || (payload.email === undefined || payload.email === null))
-            throw new BadRequestException('email is null or undefined');
+        if(!payload || !payload.email)
+            throw new BadRequestException('Email is missing');
         try {
             const user = await this.userService.addUser(payload.email);
-            console.log('created', user);
-            return {status : HttpStatus.CREATED, user};
-        }
-        catch(error){
+            return { status: HttpStatus.CREATED, user };
+        } catch(error) {
             if (error.status) 
                 throw new HttpException(error.message, error.status);
             throw new HttpException('Internal server error', HttpStatus.INTERNAL_SERVER_ERROR);
