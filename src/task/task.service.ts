@@ -1,8 +1,9 @@
 import { Injectable, NotImplementedException } from '@nestjs/common';
+import { PrismaService } from '../../prisma/prisma.service';
 
 @Injectable()
 export class TaskService {
-    constructor() {}
+    constructor(private prisma: PrismaService) {}
 
     addTask(name: string, userId: string, priority: number): Promise<void> {
         throw new NotImplementedException();

@@ -12,3 +12,10 @@ model User {
   email String  @unique
   name  String?
 }
+
+model Task {
+  id    Int     @id @default(autoincrement())
+  priority  Int
+  name  String  @unique
+  userId  Int
+}
